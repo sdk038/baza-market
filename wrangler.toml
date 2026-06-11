@@ -1,0 +1,19 @@
+name = "baza-market"
+compatibility_date = "2026-06-11"
+compatibility_flags = ["nodejs_compat"]
+main = "dist/server/index.mjs"
+no_bundle = true
+
+[assets]
+directory = "dist/client"
+binding = "ASSETS"
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.mjs", "**/*.js"]
+
+[vars]
+SUPABASE_URL = "https://kicknczeyptysotpvffh.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtpY2tuY3pleXB0eXNvdHB2ZmZoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5MDQzMzQsImV4cCI6MjA5NjQ4MDMzNH0.lRx9jRzNgXyaYKKYy18efg_T3W42LeyZXRRz5Kq3OVg"
+VITE_SUPABASE_URL = "https://kicknczeyptysotpvffh.supabase.co"
+VITE_SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtpY2tuY3pleXB0eXNvdHB2ZmZoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5MDQzMzQsImV4cCI6MjA5NjQ4MDMzNH0.lRx9jRzNgXyaYKKYy18efg_T3W42LeyZXRRz5Kq3OVg"
