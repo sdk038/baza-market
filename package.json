@@ -8,7 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
-    "deploy": "bun run build && bunx nitro deploy --prebuilt",
+    "deploy": "bun run build && bunx wrangler deploy --config wrangler.toml",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

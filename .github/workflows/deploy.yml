@@ -36,7 +36,7 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: deploy
+          command: deploy --config wrangler.toml
           secrets: |
             SUPABASE_SERVICE_ROLE_KEY
         env:
